@@ -6,9 +6,9 @@ public class ServidorRMI {
 		
 		try {
 			System.out.println("Registrando o serviço");
-			Calculadora c = new CalculcadoraImpl();
+			Calculadora c = new CalculadoraImpl();
 			LocateRegistry.createRegistry(1099);
-			Naming.rebind(CalculcadoraImpl.getURI(), c);
+			Naming.rebind(CalculadoraImpl.getURI(), c);
 			System.out.println("Aguardando clientes!");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

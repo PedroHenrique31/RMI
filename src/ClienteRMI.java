@@ -7,7 +7,7 @@ public class ClienteRMI {
 	
 	public static void main(String[] args) {
 		try {
-			Calculadora c = (Calculadora) Naming.lookup(CalculcadoraImpl.getURI());
+			Calculadora c = (Calculadora) Naming.lookup(CalculadoraImpl.getURI());
 			System.out.println(c.adicao(1, 3));
 		} catch (MalformedURLException | RemoteException | NotBoundException e) {
 			// TODO Auto-generated catch block
