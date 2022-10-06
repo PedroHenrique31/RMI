@@ -2,11 +2,11 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 
 /**
- *      Esta interface herda da classe Remote e possui apenas um mÃ©todo
- * para realizar a adiÃ§Ã£o de 2 nÃºmeros, serÃ¡ implementada remotamente.
+ *      Esta interface herda da classe Remote e possui apenas um método
+ * para realizar a adição de 2 números, serão implementada remotamente.
  *
- * Foi implementada na forma de interface porque precisamos herdar mÃ©todos de 2 classes em 
- * java e nÃ£o Ã© possÃ­vel heranÃ§a mÃºltipla em java sem o uso de interfaces.
+ * Foi implementada na forma de interface porque precisamos herdar métodos de 2 classes em 
+ * java e não é possível herança múltipla em java sem o uso de interfaces.
  */
 public interface Calculadora extends Remote {
 	public int adicao(int a,int b) throws RemoteException;
